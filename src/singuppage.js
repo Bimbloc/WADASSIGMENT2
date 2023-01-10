@@ -3,7 +3,7 @@ import {Navigate} from "react-router-dom";
 import { AuthContext } from './authContext';
 import { Link } from "react-router-dom";
 
-const LoginPage = props => {
+const SignUpPage = props => {
   const context = useContext(AuthContext)
   const [userName, setUserName] = useState("");
   const [password, setPassword] = useState("");
@@ -21,8 +21,8 @@ const LoginPage = props => {
   //}
   return (
     <>
-      <h2>Login page</h2>
-      <p>You must log in to view the protected pages </p>
+      <h2>Sign Up page</h2>
+      <p>Sign Up now to enjoy user features! </p>
       <input id="username" placeholder="user name" onChange={e => {
         setUserName(e.target.value);
       }}></input><br />
@@ -30,11 +30,11 @@ const LoginPage = props => {
         setPassword(e.target.value);
       }}></input><br />
       {/* Login web form  */}
-      <button onClick={login}>Log in</button>
-      <p>Not Registered?
-      <Link to="/singup">Sign Up!</Link></p>
+      <button onClick={login}>Sign Up</button>
+      <p>All ready Registered?
+      <Link to="/login">Log In!</Link></p>
     </>
   );
 };
 
-export default LoginPage;
+export default SignUpPage;
