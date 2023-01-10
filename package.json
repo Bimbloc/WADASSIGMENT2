@@ -50,6 +50,8 @@
     "@storybook/preset-create-react-app": "^4.0.0",
     "@storybook/react": "^6.4.18",
     "html-webpack-plugin": "^5.5.0",
-    "react-app-rewired": "^2.2.1"
+    "react-app-rewired": "^2.2.1",
+    "proxy":"http://localhost:8080"
+
   }
 }
