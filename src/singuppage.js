@@ -20,7 +20,7 @@ const SignUpPage = props => {
     //return <Navigate to={from} />;
   //}
   return (
-    <>
+    <div align="center">
       <h2>Sign Up page</h2>
       <p>Sign Up now to enjoy user features! </p>
       <input id="username" placeholder="user name" onChange={e => {
@@ -33,7 +33,7 @@ const SignUpPage = props => {
       <button onClick={login}>Sign Up</button>
       <p>All ready Registered?
       <Link to="/login">Log In!</Link></p>
-    </>
+    </div>
   );
 };
 

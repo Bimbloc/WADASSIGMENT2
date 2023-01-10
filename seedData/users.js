@@ -6,10 +6,6 @@ const  users = [
     {
         'username': 'user2',
         'password': 'test2',
-    },
-    {
-        'username': 'myname',
-        'password': 'mypass'
     }
 ];
 export default users;

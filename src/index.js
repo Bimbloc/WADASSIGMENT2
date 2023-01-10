@@ -21,6 +21,7 @@ import ActorDetailsPage from "./pages/actordetailpage";
 import TVseriesDetailsPage from "./pages/tvseriesdetail";
 import LoginPage from "./loginpage";
 import SignUpPage from "./singuppage";
+
 const queryClient = new QueryClient({
   defaultOptions: {
     queries: {
@@ -31,6 +32,7 @@ const queryClient = new QueryClient({
   },
 });
 const App = () => {
+  
   return (
     <QueryClientProvider client={queryClient}>
     <BrowserRouter>
@@ -68,4 +70,5 @@ const App = () => {
 };
 
 const rootElement = createRoot( document.getElementById("root") )
+
 rootElement.render(<App /> );

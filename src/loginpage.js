@@ -20,9 +20,10 @@ const LoginPage = props => {
     //return <Navigate to={from} />;
   //}
   return (
-    <>
+    <div align="center">
       <h2>Login page</h2>
       <p>You must log in to view the protected pages </p>
+      <p></p>
       <input id="username" placeholder="user name" onChange={e => {
         setUserName(e.target.value);
       }}></input><br />
@@ -33,7 +34,7 @@ const LoginPage = props => {
       <button onClick={login}>Log in</button>
       <p>Not Registered?
       <Link to="/singup">Sign Up!</Link></p>
-    </>
+    </div>
   );
 };
 

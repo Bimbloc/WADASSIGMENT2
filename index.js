@@ -24,11 +24,15 @@ const app = express();
 const port = process.env.PORT;
 
 app.use(errHandler);
+
 app.use(passport.initialize());
 
 app.use('/api/movies',  passport.authenticate('jwt', {session: false}), moviesRouter);
+
 app.use('/api/genres',genrerouter);
+
 app.use(express.json());
+
 app.use('/api/users', usersRouter);
 
 app.listen(port, () => {
