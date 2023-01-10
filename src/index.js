@@ -1,4 +1,5 @@
 import React from "react";
+
 import SiteHeader from './components/siteHeader'
 import FavouriteMoviesPage from "./pages/favouriteMoviesPage"; 
 import UpcomingPage from "./pages/upcomingMoviesPage";
